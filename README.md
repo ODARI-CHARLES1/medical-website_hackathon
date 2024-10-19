@@ -15,4 +15,4 @@ To set up this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone 
+   git clone https://github.com/ODARI-CHARLES1/medical-website_hackathon.git
