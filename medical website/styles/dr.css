@@ -1,0 +1,156 @@
+@import url(/styles/main.css);
+
+.side_bar{
+    background-color: var(--white);
+    height: 100%;
+    display: flex;
+    flex: 17.4%;
+    width: 300px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.logo{
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.material-symbols-outlined{
+    height: 60px;
+    aspect-ratio: 1;
+}
+main{
+    flex: 80.6%;
+    height: 100%;
+}
+ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+hr{
+    width: 200px;
+    margin:0px ;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.search{
+    width: 500px;
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    background-color: rgba(128, 128, , 0.167);
+    border-radius: 71px;
+}
+.profile{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile p{
+    font-size: 30px;
+    color: var(--charcoal);
+    text-align: end;
+}
+.dashboard{
+    flex: 88.4%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+.card{
+    width: 300px;
+    height: 150px;
+    background-color: var(--white);
+    border-radius:14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2px;
+    box-shadow: 11px 11px 8.3px #4a91e273;
+}
+.card img{
+    width: 60px;
+    margin: 3px;
+}   
+.analysis{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+}
+.diabetes_graph{
+    flex: 33.3%;
+    height: 80%;
+    background-color: white;
+    border-radius: 30px;
+
+}
+.hypertesion_graph{
+    flex: 33.3%;
+    height: 80%;
+    background-color: white;
+    border-radius: 30px;
+
+}
+
+.calendar{
+    flex: 33.3%;
+    height: 80%;
+    background-color: white;
+    border-radius: 30px;
+}
+ul li img{
+    width: 30px;
+}
+ul{
+    margin: 10px;
+}
+ul li:first-child{
+    background-color: var(--active_nav);
+    padding: 3px;
+    width: 100%;
+    &a{
+        color: white;
+    }
+}
+ul li:first-child a{
+    color: white;
+}
+li{
+    display: flex;
+    align-items: center;
+}

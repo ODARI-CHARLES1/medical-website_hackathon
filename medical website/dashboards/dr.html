@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor HealthCare Dashboard</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/dr.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src='fullcalendar.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <section class="side_bar">
+            <div class="logo">
+                <h1 class="logo_heading">+HealthCare</h1>
+            </div>
+            <hr>
+            <nav>
+                <ul>
+                   <li>
+                    <img src="/Assets/icons/dashboard_30dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                    <a href="#">Dashboard</a></li>
+                   <li><img src="/Assets/icons/personal_injury_29dp_666666_FILL0_wght400_GRAD0_opsz24.png" alt=""><a href="#">Patient</a></li>
+                   <li><img src="/Assets/icons/book_online_29dp_666666_FILL0_wght400_GRAD0_opsz24.png" alt=""><a href="#">Appointments</a></li>
+                   <li><img src="/Assets/icons/medication_29dp_666666_FILL0_wght400_GRAD0_opsz24.png" alt=""><a href="#">Treatment Plan</a></li>
+                   <li><img src="/Assets/icons/hub_29dp_666666_FILL0_wght400_GRAD0_opsz24.png" alt=""><a href="#">Communication</a></li>
+                   <li><img src="/Assets/icons/analytics_29dp_666666_FILL0_wght400_GRAD0_opsz24.png" alt=""><a href="#">Analytics</a></li>
+                   <li><img src="/Assets/icons/book_online_29dp_666666_FILL0_wght400_GRAD0_opsz24.png" alt=""><a href="#">Resources</a></li>
+                   <li><img src="/Assets/icons/settings_29dp_666666_FILL0_wght400_GRAD0_opsz24.png" alt=""><a href="#">Settings</a></li> 
+                   <hr>
+                   <li><img src="/Assets/icons/question_mark_29dp_666666_FILL0_wght400_GRAD0_opsz24.png" alt=""><a href="#">Help</a></li>
+                   <li><img src="/Assets/icons/logout_29dp_666666_FILL0_wght400_GRAD0_opsz24.png" alt=""><a href="#">LogOut</a></li>
+                </ul>
+            </nav>
+        </section>
+        <main>
+            <section class="header">
+                <div class="search">
+                    <input type="search" placeholder="Search..">
+                </div>
+                <div class="profile">
+                    <img src="/Assets/download (4).jpeg" alt="profile">
+                    <p class="welcome_message">
+                        Welcome Back <span>Dr.Odari</span>
+                    </p>
+                </div>
+            </section>
+            <section class="dashboard">
+                <h1>Dashboard</h1>
+                <div class="cards">
+                    <div class="card">
+                        <img src="/Assets/icons/patient_list_30dp_0000F5_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                        <div class="card_info">
+                            <h2>Patients</h2>
+                            <p class="number">594</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/Assets/icons/recent_patient_30dp_0000F5_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                        <div class="card_info">
+                            <h2>New Patients</h2>
+                            <p class="number">64</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/Assets/icons/inbox_30dp_0000F5_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                        <div class="card_info">
+                            <h2>Appointments</h2>
+                            <p class="number">58</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/Assets/icons/payments_30dp_0000F5_FILL0_wght400_GRAD0_opsz24 (1).png" alt="">
+                        <div class="card_info">
+                            <h2>Hospital Earnings</h2>
+                            <p class="number">$58</p>
+                        </div>
+                    </div>
+                </div>   
+                <div class="analysis">
+                    <div class="diabetes_graph">
+                        <canvas id="pie" width="400" height="400"></canvas>
+                    </div>
+                    <div class="hypertesion_graph">
+                        <canvas id="bar" width="400" height="400"></canvas>
+                    </div>
+                    <div class="calendar">
+                        <canvas id="line" width="400" height="400"></canvas>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+    </div>
+    <script src="/scripts/calendar.js"></script>
+    <script src="/scripts/fakeApi.js"></script>
+    <script src="/scripts/barGraph.js"></script>
+</body>
+</html>
